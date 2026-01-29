@@ -19,7 +19,7 @@ namespace GMPR2512.Lesson05DeathzoneAndRespawn
         {
             Rigidbody2D ballRB = ball.GetComponent<Rigidbody2D>();
             ballRB.linearVelocity = Vector2.zero;
-            ballRB.angularVelocity = 0;
+            ballRB.angularVelocity = 0f;
             yield return new WaitForSeconds(2);
 
             ball.transform.position = _spawnPoint.position;
