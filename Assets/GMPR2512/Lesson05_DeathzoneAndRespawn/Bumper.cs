@@ -12,6 +12,7 @@ namespace GMPR2512.Lesson05DeathzoneAndRespawn
         private SpriteRenderer _spriteRenderer;
         // this method is passed an object that represents
         // the collision event
+
         void Awake()
         {
             _spriteRenderer = GetComponent<SpriteRenderer>();
@@ -40,6 +41,7 @@ namespace GMPR2512.Lesson05DeathzoneAndRespawn
                         Vector2 direction = (collision.rigidbody.position - (Vector2)transform.position).normalized;
                         normal = direction;
                     }
+                    normal *= -1;
                     // Step 3: Calculate an impulse along the normal
                     Vector2 impulse = normal * _bumperForce;
                     // Step 4: Apply as an instantaneous force (ignores mass scaling)

@@ -17,10 +17,11 @@ namespace GMPR2512.Lesson05DeathzoneAndRespawn
         }
         private IEnumerator RespawnBall(GameObject ball)
         {
+            yield return new WaitForSeconds(2);
+
             Rigidbody2D ballRB = ball.GetComponent<Rigidbody2D>();
             ballRB.linearVelocity = Vector2.zero;
-            ballRB.angularVelocity = 0f;
-            yield return new WaitForSeconds(2);
+            ballRB.angularVelocity = 0;
 
             ball.transform.position = _spawnPoint.position;
         }   
