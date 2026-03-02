@@ -55,6 +55,7 @@
   <Project Path="Unity.RenderPipelines.Universal.2D.Editor.Overrides.csproj" />
   <Project Path="Unity.2D.Sprite.Editor.csproj" />
   <Project Path="Unity.Multiplayer.Center.Common.csproj" />
+  <Project Path="GMPR2512.Lesson07TransformAndInput.csproj" />
   <Project Path="Unity.InputSystem.ForUI.csproj" />
   <Project Path="GMPR2512.Lesson05DeathzoneAndRespawn.csproj" />
   <Project Path="Unity.Collections.CodeGen.csproj" />
