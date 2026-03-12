@@ -20,9 +20,21 @@ namespace GMPR2512.Lesson07TransformAndInput
 
         void OnTriggerEnter2D(Collider2D collider2D)
         {
-            Instantiate(_explosionTransform, collider2D.transform.position, transform.rotation);
-            Destroy(collider2D.gameObject);
-            Destroy(this.gameObject);
+            if(this.gameObject.name == "Projectile(Clone)"){
+                if(collider2D.transform.tag.Equals("Alien")){
+                    Instantiate(_explosionTransform, collider2D.transform.position, transform.rotation);
+                    Destroy(collider2D.gameObject);
+                    Destroy(this.gameObject);
+                }
+            }
+
+            // if(this.gameObject.name == "AlienProjectile"){
+            //     if(collider2D.transform.tag.Equals("Ship")){
+            //         Instantiate(_explosionTransform, collider2D.transform.position, transform.rotation);
+            //         Destroy(collider2D.gameObject);
+            //         Destroy(this.gameObject);
+            //     }
+            // }
             
         }
     }
