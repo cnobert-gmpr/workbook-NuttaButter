@@ -1,0 +1,14 @@
+{
+    "name": "GMPR2512.Lesson05DeathzoneAndRespawn",
+    "rootNamespace": "GMPR2512.Lesson05DeathzoneAndRespawn",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
