@@ -28,13 +28,13 @@ namespace GMPR2512.Lesson07TransformAndInput
                 }
             }
 
-            // if(this.gameObject.name == "AlienProjectile"){
-            //     if(collider2D.transform.tag.Equals("Ship")){
-            //         Instantiate(_explosionTransform, collider2D.transform.position, transform.rotation);
-            //         Destroy(collider2D.gameObject);
-            //         Destroy(this.gameObject);
-            //     }
-            // }
+            if(this.gameObject.name == "AlienProjectile(Clone)"){
+                if(collider2D.transform.tag.Equals("Ship")){
+                    Instantiate(_explosionTransform, collider2D.transform.position, transform.rotation);
+                    Destroy(collider2D.gameObject);
+                    Destroy(this.gameObject);
+                }
+            } 
             
         }
     }
