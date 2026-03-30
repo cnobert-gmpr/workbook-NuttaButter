@@ -8,6 +8,7 @@
     <ui:Style src="Scene01.UI.uss" />
 
     <ui:VisualElement class="container">
-        <ui:Button text="Click Me!" class="primary-button" />
+        <ui:Button text="Click Me!" name="ChangeToScene01Button" class="primary-button" />
+        <ui:Button text="Scene 2" name="ChangeToScene02Button" class="primary-button" />
     </ui:VisualElement>
 </ui:UXML>
