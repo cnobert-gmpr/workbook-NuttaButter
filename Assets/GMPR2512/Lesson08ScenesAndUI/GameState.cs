@@ -2,18 +2,26 @@ using UnityEngine;
 
 namespace GMPR2512.Lesson08ScenesAndUI
 {
-    public class GameState : MonoBehaviour
+    [CreateAssetMenu(menuName = "Game State")]
+    public class GameState : ScriptableObject
     {
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
+        private int _scoreLevel01 = 0;
+
+        public int ScoreLevel01 { get => _scoreLevel01; set => _scoreLevel01 = value; }
+
+        private void ResetState()
         {
-        
+            _scoreLevel01 = 0;
         }
 
-        // Update is called once per frame
-        void Update()
+        private void OnEnable()
         {
-        
+            ResetState();
+        }
+
+        private void OnDisable()
+        {
+            ResetState();
         }
     }
 }
