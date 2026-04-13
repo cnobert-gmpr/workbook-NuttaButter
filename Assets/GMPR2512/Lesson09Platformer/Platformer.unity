@@ -119,6 +119,30 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &108841772 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100010, guid: 6aa187bc6339843479c03fdfd71404a3, type: 3}
+  m_PrefabInstance: {fileID: 1376752573}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &108841773 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400010, guid: 6aa187bc6339843479c03fdfd71404a3, type: 3}
+  m_PrefabInstance: {fileID: 1376752573}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &108841774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108841772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6455a02a0017724db7853b78f905891, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GMPR2512.ShowGizmo
+  _gizmoColor: {r: 1, g: 0, b: 0, a: 1}
+  _radius: 0.2
 --- !u!1 &188117568
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,7 +191,7 @@ GameObject:
   - component: {fileID: 377497019}
   - component: {fileID: 377497021}
   - component: {fileID: 377497020}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (3)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -183,7 +207,7 @@ Transform:
   m_GameObject: {fileID: 377497018}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.81243, y: 0.74215996, z: 0}
+  m_LocalPosition: {x: -6.18, y: 1.07, z: 0}
   m_LocalScale: {x: 2, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -305,7 +329,7 @@ GameObject:
   - component: {fileID: 624933018}
   - component: {fileID: 624933020}
   - component: {fileID: 624933019}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -443,7 +467,7 @@ GameObject:
   - component: {fileID: 773644633}
   - component: {fileID: 773644635}
   - component: {fileID: 773644634}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (2)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -459,7 +483,7 @@ Transform:
   m_GameObject: {fileID: 773644632}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.85243005, y: -1.2278401, z: 0}
+  m_LocalPosition: {x: -0.87, y: -0.94, z: 0}
   m_LocalScale: {x: 2, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -570,6 +594,26 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1062380476 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100020, guid: 6aa187bc6339843479c03fdfd71404a3, type: 3}
+  m_PrefabInstance: {fileID: 1376752573}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1062380482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062380476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5d7879b78a89c64a942067b1b218dd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GMPR2512.Lesson09Platformer::GMPR2512.Lesson09Platformer.CharacterController
+  _maxSpeed: 5
+  _groundCheck: {fileID: 108841773}
+  _jumpForce: 425
 --- !u!1 &1231251478
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,7 +625,7 @@ GameObject:
   - component: {fileID: 1231251479}
   - component: {fileID: 1231251481}
   - component: {fileID: 1231251480}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -720,6 +764,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: hero
       objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 6aa187bc6339843479c03fdfd71404a3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 6aa187bc6339843479c03fdfd71404a3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400020, guid: 6aa187bc6339843479c03fdfd71404a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -763,7 +815,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 100020, guid: 6aa187bc6339843479c03fdfd71404a3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1062380482}
+    - targetCorrespondingSourceObject: {fileID: 100010, guid: 6aa187bc6339843479c03fdfd71404a3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 108841774}
   m_SourcePrefab: {fileID: 100100000, guid: 6aa187bc6339843479c03fdfd71404a3, type: 3}
 --- !u!1 &1477870796
 GameObject:
@@ -776,7 +834,7 @@ GameObject:
   - component: {fileID: 1477870797}
   - component: {fileID: 1477870799}
   - component: {fileID: 1477870798}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (4)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -792,7 +850,7 @@ Transform:
   m_GameObject: {fileID: 1477870796}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.6, y: -2.31784, z: 0}
+  m_LocalPosition: {x: 4.08, y: -2.23, z: 0}
   m_LocalScale: {x: 1.2134, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1006,7 +1064,7 @@ GameObject:
   - component: {fileID: 1963971815}
   - component: {fileID: 1963971817}
   - component: {fileID: 1963971816}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square (5)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1022,7 +1080,7 @@ Transform:
   m_GameObject: {fileID: 1963971814}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.6745, y: 1.72216, z: 0}
+  m_LocalPosition: {x: 3.52, y: 1.29, z: 0}
   m_LocalScale: {x: 2.874, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

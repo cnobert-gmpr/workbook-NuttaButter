@@ -8,11 +8,15 @@ TagManager:
   - Alien
   - Ship
   - Ground
+  - BombPickup
+  - ExplosionFX
+  - Bullet
+  - HealthBar
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - 

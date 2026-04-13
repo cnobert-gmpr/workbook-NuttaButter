@@ -4,9 +4,9 @@ namespace GMPR2512.Lesson09Platformer
 {
     public class CharacterController : MonoBehaviour
     {
-        public float _maxSpeed = 5;
-        public Transform _groundCheck;
-        public float _jumpForce = 1000;
+        [SerializeField] private float _maxSpeed = 5;
+        [SerializeField] private Transform _groundCheck;
+        [SerializeField] private float _jumpForce = 1000;
 
         protected Animator _myAnimator;
         protected Rigidbody2D _myRigidBody;
