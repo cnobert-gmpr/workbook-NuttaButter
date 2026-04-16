@@ -36,6 +36,16 @@ namespace GMPR2512.Lesson09Platformer
         {
             float horizontalAxis = Input.GetAxis("Horizontal");
             _myAnimator.SetFloat("Speed", Mathf.Abs(horizontalAxis));
+            
+            if(horizontalAxis < 0 && _facingRight)
+            {
+                _facingRight = false;
+                transform.localScale = new Vector3(-1.2f, 1.2f, 1.2f);
+            } else if(horizontalAxis > 0 && !_facingRight)
+            {
+                _facingRight = true;
+                transform.localScale = new Vector3(1.2f, 1.2f, 1.2f);
+            }
 
             //Have we reached maxSpeed? If not, add force.
             if (horizontalAxis * _myRigidBody.linearVelocity.x < _maxSpeed)
