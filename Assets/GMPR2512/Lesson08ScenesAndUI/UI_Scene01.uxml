@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ui="UnityEngine.UIElements"
+    xmlns:uie="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
+>
+    <ui:Style src="Scene01.UI.uss" />
+
+    <ui:VisualElement class="container">
+        <ui:Button text="Click Me!" name="ChangeToScene01Button" class="primary-button" />
+        <ui:Button text="Scene 2" name="ChangeToScene02Button" class="primary-button" />
+    </ui:VisualElement>
+</ui:UXML>
